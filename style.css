@@ -15,6 +15,11 @@ h1, h2 {
 
 section {
   padding: 40px 20px;
+  margin: 20px auto;
+  max-width: 1000px;
+  background-color: #FFFFFF; /* White background for sections */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for sections */
 }
 
 /* Hero Section */
@@ -48,17 +53,31 @@ section {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Offer and Call-to-Action Sections */
-.offer, .cta, .how-we-work, .cta-2 {
-  background-color: #FFFFFF;
-  text-align: center;
+/* Section Styles for Business Solutions */
+#data-analysis, #business-optimization, #digital-transformation, #documentation,
+#store-setup, #inventory-management, #payment-integration, #analytics-reporting {
+  margin-bottom: 40px;
 }
 
-.offer p, .how-we-work p {
-  max-width: 800px;
-  margin: 0 auto 20px;
+#data-analysis ul, #business-optimization ul, #digital-transformation ul, #documentation ul,
+#store-setup ul, #inventory-management ul, #payment-integration ul, #analytics-reporting ul {
+  padding-left: 40px;
+  list-style-type: disc;
 }
 
+#data-analysis ul li, #business-optimization ul li, #digital-transformation ul li, #documentation ul li,
+#store-setup ul li, #inventory-management ul li, #payment-integration ul li, #analytics-reporting ul li {
+  margin-bottom: 10px;
+  color: #555; /* Slightly lighter text color for list items */
+}
+
+#data-analysis h2, #business-optimization h2, #digital-transformation h2, #documentation h2,
+#store-setup h2, #inventory-management h2, #payment-integration h2, #analytics-reporting h2 {
+  margin-bottom: 15px;
+  color: #00695C; /* Teal for headings */
+}
+
+/* Buttons for Actions (Optional for Call-to-Actions) */
 .button {
   display: inline-block;
   padding: 10px 20px;
