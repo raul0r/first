@@ -1,70 +1,92 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>gatofeo.net</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
-    <link href="/style.css" rel="stylesheet" />
-  </head>
-  <body>
-    <!-- Navbar Section -->
-    <nav class="navbar">
-      <ul class="nav-menu">
-        <li><a href="/web_design.html">Web Design</a></li>
-        <li><a href="#business-analysis">Business Analysis</a></li>
-        <li><a href="#ecommerce">Ecommerce</a></li>
-        <li><a href="#inventory-systems">Inventory Systems</a></li>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>gatofeo.net</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="main-header">
+    <div class="logo">gatofeo.net</div>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="landing.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="get-a-quote.html" class="cta">Get a Quote</a></li>
       </ul>
-      <a href="#quote" class="quote-button">Request a Quote</a>
     </nav>
-    <!-- Hero Section -->
-    <section class="hero">
-      <h1>Ready to Elevate Your Online Presence? Let’s Build Something Amazing!</h1>
-    </section>
+  </header>
 
-    <!-- Services Section -->
-    <section class="services">
-      <h2>Services</h2>
-      <div class="service-cards">
-        <div class="card">Web Design</div>
-        <div class="card">Business Analysis</div>
-        <div class="card">Ecommerce</div>
-        <div class="card">Inventory Systems</div>
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>We Build Digital Solutions</h1>
+    <p>Your partner in web, app, and marketing solutions.</p>
+    <a href="get-a-quote.html" class="btn-primary">Get a Quote</a>
+  </section>
+
+  <!-- Service Overview -->
+  <section class="services-overview">
+    <h2>Our Key Services</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <h3>Web Design</h3>
+        <p>Clean, modern designs optimized for user experience.</p>
       </div>
-    </section>
-
-    <!-- What We Offer Section -->
-    <section class="offer">
-      <h2>What We Offer</h2>
-      <p>
-        At gatofeo.net, we create exceptional websites tailored to your unique goals. Combining elegance, functionality, and performance, our expert team delivers solutions that make an impact. From business websites to eCommerce platforms, we bring your vision to life with precision and care.
-      </p>
-      <a href="#quote" class="button">Button to Quote</a>
-    </section>
-
-    <!-- Call to Action Section -->
-    <section class="cta">
-      <h2>Your Digital Transformation Starts Here – Contact Us Today!</h2>
-      <a href="#quote" class="button">Button to Quote</a>
-    </section>
-
-    <!-- How We Work Section -->
-    <section class="how-we-work">
-      <h2>How We Work</h2>
-      <div class="work-cards">
-        <div class="card">Expert Team</div>
-        <div class="card">Tailored Solutions</div>
-        <div class="card">Cutting-edge Technology</div>
-        <div class="card">Dedicated Support</div>
+      <div class="service-card">
+        <h3>App Development</h3>
+        <p>Robust mobile and web apps tailored to your business needs.</p>
       </div>
-    </section>
+      <div class="service-card">
+        <h3>Digital Marketing</h3>
+        <p>SEO, social media, and targeted campaigns for growth.</p>
+      </div>
+    </div>
+  </section>
 
-    <!-- Call to Action II Section -->
-    <section class="cta-2">
-      <h2>Unlock the Potential of Your Business – Let’s Get Started!</h2>
-      <a href="#quote" class="button">Button to Quote</a>
-    </section>
-  </body>
+  <!-- Featured Projects -->
+  <section class="featured-projects">
+    <h2>Featured Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="https://via.placeholder.com/300x200" alt="Project Image" />
+        <h4>Project Title</h4>
+      </div>
+      <div class="project-card">
+        <img src="https://via.placeholder.com/300x200" alt="Project Image" />
+        <h4>Project Title</h4>
+      </div>
+      <div class="project-card">
+        <img src="https://via.placeholder.com/300x200" alt="Project Image" />
+        <h4>Project Title</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <h2>What Our Clients Say</h2>
+    <div class="testimonial">
+      <p>"They delivered over 100+ projects on time and met all our expectations!"</p>
+      <span>- Happy Client</span>
+    </div>
+  </section>
+
+  <!-- Secondary Call to Action -->
+  <section class="secondary-cta">
+    <h2>Ready to Discuss Your Project?</h2>
+    <a href="contact.html" class="btn-secondary">Contact Us</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 DigitalAgency. All rights reserved.</p>
+  </footer>
+
+  <script src="/script.js"></script>
+</body>
 </html>

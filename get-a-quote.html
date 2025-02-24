@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Digital Services Agency - Get a Quote</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="main-header">
+    <div class="logo">DigitalAgency</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="get-a-quote.html" class="active cta">Get a Quote</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Quote Form -->
+  <section class="quote-section">
+    <h1>Request a Quote</h1>
+    <form id="quoteForm" class="quote-form" novalidate>
+      <!-- Step 1: Service Type -->
+      <div class="form-step active">
+        <h2>Select Service(s)</h2>
+        <label>
+          <input type="checkbox" name="serviceType" value="Web Design" />
+          Web Design
+        </label>
+        <label>
+          <input type="checkbox" name="serviceType" value="App Development" />
+          App Development
+        </label>
+        <label>
+          <input type="checkbox" name="serviceType" value="Digital Marketing" />
+          Digital Marketing
+        </label>
+        <button type="button" class="next-btn">Next</button>
+      </div>
+
+      <!-- Step 2: Project Description -->
+      <div class="form-step">
+        <h2>Project Description</h2>
+        <label for="projectDescription">Please describe your project <span>*</span></label>
+        <textarea id="projectDescription" name="projectDescription" required></textarea>
+        <div class="step-nav">
+          <button type="button" class="prev-btn">Back</button>
+          <button type="button" class="next-btn">Next</button>
+        </div>
+      </div>
+
+      <!-- Step 3: Budget & Timeline -->
+      <div class="form-step">
+        <h2>Budget &amp; Timeline</h2>
+        <label for="budgetRange">Budget Range <span>*</span></label>
+        <select id="budgetRange" name="budgetRange" required>
+          <option value="">--Select--</option>
+          <option value="< $5k">&lt; $5k</option>
+          <option value="$5k-$10k">$5k - $10k</option>
+          <option value="> $10k">&gt; $10k</option>
+        </select>
+
+        <label for="timeline">Timeline <span>*</span></label>
+        <select id="timeline" name="timeline" required>
+          <option value="">--Select--</option>
+          <option value="< 1 month">&lt; 1 month</option>
+          <option value="1-3 months">1-3 months</option>
+          <option value="> 3 months">&gt; 3 months</option>
+        </select>
+
+        <div class="step-nav">
+          <button type="button" class="prev-btn">Back</button>
+          <button type="button" class="next-btn">Next</button>
+        </div>
+      </div>
+
+      <!-- Step 4: Contact Information -->
+      <div class="form-step">
+        <h2>Your Details</h2>
+        <label for="quoteName">Name <span>*</span></label>
+        <input type="text" id="quoteName" name="quoteName" required />
+
+        <label for="quoteEmail">Email <span>*</span></label>
+        <input type="email" id="quoteEmail" name="quoteEmail" required />
+
+        <label for="companyName">Company Name (optional)</label>
+        <input type="text" id="companyName" name="companyName" />
+
+        <label for="projectFile">File Attachment (optional)</label>
+        <input type="file" id="projectFile" name="projectFile" accept=".pdf,.jpg,.png" />
+
+        <div class="step-nav">
+          <button type="button" class="prev-btn">Back</button>
+          <button type="submit" class="submit-btn">Submit</button>
+        </div>
+      </div>
+    </form>
+
+    <!-- Confirmation Message (hidden by default) -->
+    <p id="quoteSuccessMsg" class="success-msg" style="display: none;">
+      Thank you for requesting a quote! We will review your information and get back to you soon.
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 DigitalAgency. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

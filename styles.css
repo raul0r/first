@@ -1,0 +1,151 @@
+/* Reset & Basic Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #000; /* Fallback background if no image is loaded */
+    color: #fff;
+    line-height: 1.5;
+  }
+
+  /* Navigation Bar */
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent overlay */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+  }
+  .logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  nav ul li a:hover {
+    color: #00fff0; /* Vibrant hover color */
+  }
+
+  /* Hero Section */
+  .hero {
+    /* Full screen hero */
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* Background: either an image or gradient */
+    background: url('https://via.placeholder.com/1920x1080?text=Hero+Background') center/cover no-repeat;
+    /* Use a dark overlay to improve text visibility */
+    position: relative;
+    padding: 0 2rem;
+  }
+  .hero::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Overlay color and opacity */
+    z-index: 0;
+  }
+  /* Hero content container to layer above overlay */
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+  }
+  .hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+  }
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #ddd;
+  }
+
+  /* CTA Buttons */
+  .cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  .btn-primary,
+  .btn-secondary {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  .btn-primary {
+    background-color: #00fff0;
+    color: #000;
+    font-weight: 600;
+  }
+  .btn-primary:hover {
+    background-color: #00ccc0;
+    transform: translateY(-2px);
+  }
+  .btn-secondary {
+    background-color: transparent;
+    border: 2px solid #00fff0;
+    color: #00fff0;
+    font-weight: 500;
+  }
+  .btn-secondary:hover {
+    background-color: #00fff0;
+    color: #000;
+    transform: translateY(-2px);
+  }
+
+  /* Scroll Indicator */
+  .scroll-indicator {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    z-index: 1;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+  }
+  .scroll-indicator:hover {
+    opacity: 1;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2rem;
+    }
+    .hero p {
+      font-size: 1rem;
+    }
+    .cta-buttons {
+      flex-direction: column;
+    }
+  }
